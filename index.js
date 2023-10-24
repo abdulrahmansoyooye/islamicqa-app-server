@@ -14,7 +14,6 @@ const app = express();
 const PORT = 3001 || process.env.PORT;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const db = mongoose.connection;
 
 // CONFIG
 dotenv.config();
