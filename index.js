@@ -23,7 +23,7 @@ app.use(morgan("common"));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "*",
   credentials: true,
   optionSuccessStatus: 200,
 };
